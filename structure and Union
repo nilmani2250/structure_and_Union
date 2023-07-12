@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct A
+{
+  int num;
+  char ch;
+};
+union B
+{
+   int num;
+   char ch;
+};
+int main()
+{
+    struct A a;
+    union B b;
+    a.num=10;
+    a.ch='R';
+    b.num=10;
+    b.ch='R';
+
+    printf("%d %c\n",a.num,a.ch);
+    printf("%d %c\n",b.num,b.ch);
+}
